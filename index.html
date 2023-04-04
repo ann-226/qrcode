@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <header class="flex-item item-1">Header
+        <button id="clear" class="btn">Clear localStorage</button>
+        <button id="add-all">Add All Goods</button>
+      </header>
+      <main>
+        <aside class="flex-item item-2">
+          
+          <div id="reader"></div>
+          <div id="result">result</div>
+        </aside>
+        <section class="flex-item item-3">
+          <div class="price_title">Разом: <span class="price_result">0 </span><span>&#8372;</span></div>
+          
+          <table>
+            <thead>
+              <tr>
+                <th data-type="string">Назва</th>
+                <th data-type="number">К-сть</th>
+                <th data-type="number">Ціна &#8372</th>
+                <th data-type="number" class="flex-row">
+                  <div class="discont">Знижка </div>
+                  <div class="discont"> Сума </div>
+                </th>
+              </tr>
+            </thead>
+           
+            <tbody class="list">
+              <!-- rows with goods from cargo -->
+            </tbody>
+          </table>
+
+          
+        </section>
+      </main>
+      <footer class="flex-item item-5">Footer</footer>
+    </div>
+    <script src="/js/html5-qrcode.min.js"></script>
+    <script src="/js/script.js"></script>
+    
+  </body>
+</html>
