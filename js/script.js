@@ -4,7 +4,7 @@ const scanner = new Html5QrcodeScanner("reader", {
     width: 250,
     height: 250,
   },
-  fps: 20,
+  fps: 100,
 });
 
 scanner.render(success, error);
@@ -16,8 +16,8 @@ function success(result) {
     <p><a href="${result}">${result}</p>
 
     `;
-  scanner.clear();
-  document.getElementById("reader").remove();
+  // scanner.clear();
+  // document.getElementById("reader").remove();
 }
 function error(err) {
   console.log(err);
